@@ -1,4 +1,4 @@
-package sg.edu.np.Week2_WenKang;
+package sg.edu.np.madpractical;
 
 import android.content.Context;
 

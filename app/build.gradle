@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.0"
 
     defaultConfig {
-        applicationId "sg.edu.np.Week2_WenKang"
+        applicationId "sg.edu.np.madpractical"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1

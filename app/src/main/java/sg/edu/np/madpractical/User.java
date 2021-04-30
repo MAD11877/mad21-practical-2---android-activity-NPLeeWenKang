@@ -1,4 +1,4 @@
-package sg.edu.np.Week2_WenKang;
+package sg.edu.np.madpractical;
 
 public class User {
     public User(String str, String str2,int num,boolean bool){

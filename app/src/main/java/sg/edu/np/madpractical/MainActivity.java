@@ -1,4 +1,4 @@
-package sg.edu.np.Week2_WenKang;
+package sg.edu.np.madpractical;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
+import sg.edu.np.madpractical.R;
 
 public class MainActivity extends AppCompatActivity {
 
