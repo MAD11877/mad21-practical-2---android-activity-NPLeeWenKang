@@ -18,30 +18,31 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.i("Debug","OnCreate");
-
+        User user = new User(false);
         Button followBtn = (Button) findViewById(R.id.followBtn);
         followBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (followBtn.getText() == "Follow"){
-                    followBtn.setText("Unfollow");
-                }else{
-                    followBtn.setText("Follow");
-                }
-
+//                Log.i("Debug",followBtn.getText().toString());
+//                if (followBtn.getText().toString() == "Follow"){
+//                    Log.i("DebugTrue",followBtn.getText().toString());
+//                    followBtn.setText("Unfollow");
+//                }else{
+//                    Log.i("DebugFalse",followBtn.getText().toString());
+//                    followBtn.setText("Follow");
+//                }
+                    user.setFollowed(!user.isFollowed());
+                    if (user.isFollowed()){
+                        followBtn.setText("Unfollow");
+                    } else{
+                        followBtn.setText("Follow");
+                    }
             }
         });
     }
     @Override
     protected void onStart( ) {
         super.onStart();
-        User u1 = new User("John", "Super User", 101, false);
-        Log.i("Debug",u1.getName());
-        Log.i("Debug",u1.toString());
-        Log.i("Debug","onStart");
-//        String id = 1010
-//        TextView textView = findViewById(R.id.);
-//        textView.setText(view)
     }
     @Override
     protected void onResume( ) {

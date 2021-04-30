@@ -8,6 +8,10 @@ public class User {
         followed = bool;
     }
 
+    public User(boolean followed) {
+        this.followed = followed;
+    }
+
     private String name;
     private String description;
     private int id;
